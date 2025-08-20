@@ -1,0 +1,16 @@
+import { gql } from "@apollo/client";
+
+const GET_PAGE = gql` query characterpage($page: Int!) {
+   
+   characters(page: 2) {
+
+     results {
+        id
+        name
+        status
+        image
+     }
+   
+   }
+
+}`;
