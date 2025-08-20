@@ -1,0 +1,12 @@
+import { gql } from "@apollo/client";
+
+const GET_EPISODE = gql`query   episodes($id: ID!) {
+   
+   episode(id: 2) {
+     id
+     name
+    air_date
+    episode
+   }
+
+}`;
