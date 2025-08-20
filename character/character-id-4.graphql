@@ -1,0 +1,12 @@
+import {gql} from "@apollo/client";
+
+const GET_CHARATERS = gql` query charaters($id: ID!) {
+    charater(id: 4) {
+        id 
+        name 
+        status
+    }
+
+ }
+ `;
+
